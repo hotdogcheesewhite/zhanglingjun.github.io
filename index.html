@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lingjun Zhang | 张凌骏</title>
+  <meta name="description" content="Personal academic homepage of Lingjun Zhang (张凌骏). Research on end-to-end autonomous driving, vision-language models, world models, and multimodal reasoning." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-en">Lingjun Zhang</span>
+        <span class="brand-cn">张凌骏</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#interests">Research</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container" id="top">
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
+      <div class="hero-text">
+        <h1 class="name">
+          Lingjun Zhang <span class="name-cn">| 张凌骏</span>
+        </h1>
+        <p class="affiliation">
+          Researcher · <a href="https://www.bytedance.com/" target="_blank" rel="noopener">ByteDance</a>
+          · Beijing, China
+        </p>
+        <p class="lead">Welcome to my homepage! 👋</p>
+        <p>
+          I am a researcher working at the intersection of
+          <strong>end-to-end autonomous driving</strong>,
+          <strong>vision-language models (VLM)</strong>, and
+          <strong>multimodal reasoning</strong>.
+          My current research explores how large multimodal models can perceive, reason about, and act in
+          complex physical-world scenes — with a special emphasis on
+          <em>driving world models</em>, <em>long-horizon planning</em>, and
+          <em>formal traffic-law compliance</em>.
+        </p>
+        <p>
+          Previously, my work focused on the formalization and online monitoring of traffic right-of-way
+          laws for autonomous vehicles at urban intersections, published at IEEE IV 2025.
+          I have since extended my research to driving world models (DeepSight, ICML 2026) and
+          progressive multimodal reasoning for autonomous driving (MindDriver, CVPR 2026).
+        </p>
+        <p>
+          I am always open to discussions and collaborations — feel free to
+          <a href="#contact">reach out</a>!
+        </p>
+
+        <ul class="social-row">
+          <li><a href="mailto:zhanglingjun.zlj@example.com" title="Email"><i class="bi bi-envelope-fill"></i></a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i><i class="fa-solid fa-graduation-cap"></i></a></li>
+          <li><a href="https://github.com/hotdogcheesewhite" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://arxiv.org/a/zhang_l" target="_blank" rel="noopener" title="arXiv"><i class="fa-brands fa-orcid"></i></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <aside class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/img/avatar.jpg" alt="Lingjun Zhang" />
+        </div>
+        <p class="photo-caption">Lingjun Zhang<br /><span>张凌骏</span></p>
+      </aside>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section id="interests" class="section">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="interest-grid">
+        <div class="interest-card">
+          <i class="bi bi-car-front-fill"></i>
+          <h3>End-to-End Autonomous Driving</h3>
+          <p>Unified architectures that fuse perception, prediction and planning, evaluated on closed-loop benchmarks such as Bench2Drive.</p>
+        </div>
+        <div class="interest-card">
+          <i class="bi bi-eye-fill"></i>
+          <h3>Vision-Language Models</h3>
+          <p>Adapting general-domain VLMs for embodied driving tasks with chain-of-thought, scene-grounded reasoning, and reinforcement fine-tuning.</p>
+        </div>
+        <div class="interest-card">
+          <i class="bi bi-globe2"></i>
+          <h3>Driving World Models</h3>
+          <p>Predicting latent semantic states of future frames in BEV space to enable long-horizon planning and counterfactual rollouts.</p>
+        </div>
+        <div class="interest-card">
+          <i class="bi bi-shield-check"></i>
+          <h3>Safety &amp; Traffic Law Formalization</h3>
+          <p>Translating ambiguous traffic regulations into machine-interpretable logical frameworks for online compliance monitoring.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="section">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">May 2026</span>
+          <span class="news-text">Our paper <em>“DeepSight: Long-Horizon World Modeling via Latent States Prediction for End-to-End Autonomous Driving”</em> was accepted at <strong>ICML 2026</strong>.</span>
+        </li>
+        <li>
+          <span class="news-date">Feb 2026</span>
+          <span class="news-text">Our paper <em>“MindDriver: Introducing Progressive Multimodal Reasoning for Autonomous Driving”</em> was accepted at <strong>CVPR 2026</strong>.</span>
+        </li>
+        <li>
+          <span class="news-date">Aug 2025</span>
+          <span class="news-text">Our paper <em>“Formalization and Online Monitoring of Right-of-way Laws for Autonomous Vehicles at Intersections”</em> was added to IEEE <em>Xplore</em>.</span>
+        </li>
+        <li>
+          <span class="news-date">Jun 2025</span>
+          <span class="news-text">Attended <strong>IEEE IV 2025</strong> in Cluj-Napoca, Romania, presenting our work on right-of-way law formalization.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="pub-note">
+        <span class="badge eq">*</span> indicates equal contribution.
+        Click <i class="bi bi-file-earmark-pdf"></i> for paper / preprint links.
+      </p>
+
+      <!-- Publication 1 -->
+      <article class="pub-item">
+        <div class="pub-thumb">
+          <img src="assets/img/papers/deepsight.jpg" alt="DeepSight teaser figure" loading="lazy" />
+          <div class="thumb-tag">ICML 2026</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-venue">ICML 2026</div>
+          <h3 class="pub-title">
+            DeepSight: Long-Horizon World Modeling via Latent States Prediction for End-to-End Autonomous Driving
+          </h3>
+          <p class="pub-authors">
+            <strong>Lingjun Zhang</strong>, Changjie Wu, Linzhe Shi, Jiangyang Li, Jiaxin Liu,
+            Lei Yang, Hang Zhang, Mu Xu, Hong Wang
+          </p>
+          <p class="pub-meta">
+            <em>Proceedings of the 43rd International Conference on Machine Learning (ICML)</em>, 2026.
+          </p>
+          <p class="pub-abstract">
+            We propose a driving world model that performs parallel prediction of latent semantic
+            features for consecutive future frames in the bird's-eye-view (BEV) space, enabling
+            long-horizon modeling of future world states. We further introduce an efficient,
+            adaptive text-reasoning mechanism that injects social knowledge for challenging
+            long-tail driving scenarios, achieving state-of-the-art results on the closed-loop
+            <strong>Bench2Drive</strong> benchmark.
+          </p>
+          <p class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2605.10564" target="_blank" rel="noopener"><i class="ai ai-arxiv"></i><i class="bi bi-file-earmark-text"></i> arXiv</a>
+            <a class="pub-link" href="https://arxiv.org/pdf/2605.10564" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+            <a class="pub-link" href="https://github.com/hotdogcheesewhite/DeepSight" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2605.10564" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> DOI</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Publication 2 -->
+      <article class="pub-item">
+        <div class="pub-thumb">
+          <img src="assets/img/papers/minddriver.jpg" alt="MindDriver teaser figure" loading="lazy" />
+          <div class="thumb-tag">CVPR 2026</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-venue">CVPR 2026</div>
+          <h3 class="pub-title">
+            MindDriver: Introducing Progressive Multimodal Reasoning for Autonomous Driving
+          </h3>
+          <p class="pub-authors">
+            Yujian Yuan<span class="badge eq">*</span>, <strong>Lingjun Zhang<span class="badge eq">*</span></strong>, Changjie Wu, Xinyuan Chang, Xin Cai,
+            Shuang Zeng, Linzhe Shi, Sijin Wang, Hang Zhang, Mu Xu
+          </p>
+          <p class="pub-meta">
+            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026.
+          </p>
+          <p class="pub-abstract">
+            MindDriver is a progressive multimodal reasoning framework that lets VLMs imitate human-like
+            progressive thinking for autonomous driving — semantic understanding, semantic-to-physical
+            imagination, and physical-space trajectory planning. With a feedback-guided data annotation
+            pipeline and progressive reinforcement fine-tuning, MindDriver achieves superior performance on
+            both <strong>nuScenes</strong> open-loop and <strong>Bench2Drive</strong> closed-loop evaluation.
+          </p>
+          <p class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2602.21952" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> arXiv</a>
+            <a class="pub-link" href="https://arxiv.org/pdf/2602.21952" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+            <a class="pub-link" href="https://github.com/hotdogcheesewhite/MindDriver" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            <a class="pub-link" href="https://doi.org/10.48550/arXiv.2602.21952" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> DOI</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Publication 3 -->
+      <article class="pub-item">
+        <div class="pub-thumb">
+          <img src="assets/img/papers/rightofway.jpg" alt="SinD intersection drone view" loading="lazy" />
+          <div class="thumb-tag">IEEE IV 2025</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-venue">IEEE IV 2025</div>
+          <h3 class="pub-title">
+            Formalization and Online Monitoring of Right-of-way Laws for Autonomous Vehicles at Intersections
+          </h3>
+          <p class="pub-authors">
+            <strong>Lingjun Zhang</strong>, Chengxiang Zhao, Lei Yang, Lei Song, Ziying Song, Wenhao Yu
+          </p>
+          <p class="pub-meta">
+            <em>2025 IEEE Intelligent Vehicles Symposium (IV)</em>, Cluj-Napoca, Romania, 22–25 June 2025.
+          </p>
+          <p class="pub-abstract">
+            We formalize right-of-way laws at urban intersections into a machine-interpretable logical
+            framework and build a threshold analysis framework on top of the SIND dataset, rigorously
+            defining the prioritization of right-of-way. The optimal compliance threshold is determined via
+            sensitivity analysis under the proposed <em>Weighted TPN score (WTPNs)</em> and deployed for
+            online intersection monitoring.
+          </p>
+          <p class="pub-links">
+            <a class="pub-link" href="https://ieeexplore.ieee.org/document/11097697" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> IEEE Xplore</a>
+            <a class="pub-link" href="https://doi.org/10.1109/IV64158.2025.11097697" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> DOI</a>
+            <a class="pub-link" href="https://github.com/SOTIF-AVLab/SinD" target="_blank" rel="noopener"><i class="bi bi-github"></i> Dataset (SinD)</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-card">
+        <div class="contact-row"><i class="bi bi-envelope-fill"></i><span>zhanglingjun.zlj [at] bytedance.com</span></div>
+        <div class="contact-row"><i class="bi bi-geo-alt-fill"></i><span>Beijing, China</span></div>
+        <div class="contact-row"><i class="bi bi-building"></i><span>ByteDance · Data / E-commerce Platform Governance</span></div>
+        <div class="contact-row"><i class="bi bi-github"></i><a href="https://github.com/hotdogcheesewhite" target="_blank" rel="noopener">github.com/hotdogcheesewhite</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Lingjun Zhang · 张凌骏. Last updated June 2026.</p>
+    <p class="footer-sub">Built with ❤️ &nbsp;·&nbsp; Inspired by <a href="https://zhang-lingfeng.github.io/" target="_blank" rel="noopener">al-folio</a>.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll + active link highlight
+    const links = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+    const setActive = () => {
+      const y = window.scrollY + 120;
+      let current = sections[0]?.id;
+      sections.forEach(s => { if (s.offsetTop <= y) current = s.id; });
+      links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+    };
+    window.addEventListener('scroll', setActive);
+    setActive();
+    links.forEach(a => a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')));
+  </script>
+</body>
+</html>
